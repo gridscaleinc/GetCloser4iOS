@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,10 +14,21 @@
 		FC98BBD92453DD1900A992EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC98BBD82453DD1900A992EE /* Assets.xcassets */; };
 		FC98BBDC2453DD1900A992EE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC98BBDB2453DD1900A992EE /* Preview Assets.xcassets */; };
 		FC98BBDF2453DD1900A992EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC98BBDD2453DD1900A992EE /* LaunchScreen.storyboard */; };
+		FC98BBE92453DE3A00A992EE /* StompClientKit in Frameworks */ = {isa = PBXBuildFile; productRef = FC98BBE82453DE3A00A992EE /* StompClientKit */; };
+		FC98BC082453E8D000A992EE /* apple-icon-60x60.png in Resources */ = {isa = PBXBuildFile; fileRef = FC98BC042453E8D000A992EE /* apple-icon-60x60.png */; };
+		FC98BC092453E8D000A992EE /* apple-icon-180x180.png in Resources */ = {isa = PBXBuildFile; fileRef = FC98BC052453E8D000A992EE /* apple-icon-180x180.png */; };
+		FC98BC0A2453E8D000A992EE /* apple-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = FC98BC062453E8D000A992EE /* apple-icon.png */; };
+		FC98BC0B2453E8D000A992EE /* apple-icon-120x120.png in Resources */ = {isa = PBXBuildFile; fileRef = FC98BC072453E8D000A992EE /* apple-icon-120x120.png */; };
+		FC98BC102453ED6900A992EE /* icons8-near-me-50.png in Resources */ = {isa = PBXBuildFile; fileRef = FC98BC0C2453ED6900A992EE /* icons8-near-me-50.png */; };
+		FC98BC112453ED6900A992EE /* icons8-profile-50.png in Resources */ = {isa = PBXBuildFile; fileRef = FC98BC0D2453ED6900A992EE /* icons8-profile-50.png */; };
+		FC98BC122453ED6900A992EE /* icons8-share-50.png in Resources */ = {isa = PBXBuildFile; fileRef = FC98BC0E2453ED6900A992EE /* icons8-share-50.png */; };
+		FC98BC132453ED6900A992EE /* icons8-siri-50.png in Resources */ = {isa = PBXBuildFile; fileRef = FC98BC0F2453ED6900A992EE /* icons8-siri-50.png */; };
+		FC98BC162453F15700A992EE /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = FC98BC152453F15700A992EE /* Alamofire */; };
+		FC98BC192453F1A000A992EE /* OAuthSwift in Frameworks */ = {isa = PBXBuildFile; productRef = FC98BC182453F1A000A992EE /* OAuthSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		FC98BBCC2453DD1700A992EE /* GetCloser4iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GetCloser4iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC98BBCC2453DD1700A992EE /* Get Closer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Get Closer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC98BBCF2453DD1700A992EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FC98BBD12453DD1700A992EE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		FC98BBD42453DD1700A992EE /* GetCloser4iOS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GetCloser4iOS.xcdatamodel; sourceTree = "<group>"; };
@@ -26,6 +37,15 @@
 		FC98BBDB2453DD1900A992EE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FC98BBDE2453DD1900A992EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FC98BBE02453DD1900A992EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC98BBE62453DDB400A992EE /* StompClientKit */ = {isa = PBXFileReference; lastKnownFileType = folder; name = StompClientKit; path = ../StompClientKit; sourceTree = "<group>"; };
+		FC98BC042453E8D000A992EE /* apple-icon-60x60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "apple-icon-60x60.png"; sourceTree = "<group>"; };
+		FC98BC052453E8D000A992EE /* apple-icon-180x180.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "apple-icon-180x180.png"; sourceTree = "<group>"; };
+		FC98BC062453E8D000A992EE /* apple-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "apple-icon.png"; sourceTree = "<group>"; };
+		FC98BC072453E8D000A992EE /* apple-icon-120x120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "apple-icon-120x120.png"; sourceTree = "<group>"; };
+		FC98BC0C2453ED6900A992EE /* icons8-near-me-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-near-me-50.png"; sourceTree = "<group>"; };
+		FC98BC0D2453ED6900A992EE /* icons8-profile-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-profile-50.png"; sourceTree = "<group>"; };
+		FC98BC0E2453ED6900A992EE /* icons8-share-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-share-50.png"; sourceTree = "<group>"; };
+		FC98BC0F2453ED6900A992EE /* icons8-siri-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-siri-50.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +53,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC98BBE92453DE3A00A992EE /* StompClientKit in Frameworks */,
+				FC98BC162453F15700A992EE /* Alamofire in Frameworks */,
+				FC98BC192453F1A000A992EE /* OAuthSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,15 +65,17 @@
 		FC98BBC32453DD1700A992EE = {
 			isa = PBXGroup;
 			children = (
+				FC98BBE62453DDB400A992EE /* StompClientKit */,
 				FC98BBCE2453DD1700A992EE /* GetCloser4iOS */,
 				FC98BBCD2453DD1700A992EE /* Products */,
+				FC98BBE72453DE3A00A992EE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		FC98BBCD2453DD1700A992EE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FC98BBCC2453DD1700A992EE /* GetCloser4iOS.app */,
+				FC98BBCC2453DD1700A992EE /* Get Closer.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,6 +83,7 @@
 		FC98BBCE2453DD1700A992EE /* GetCloser4iOS */ = {
 			isa = PBXGroup;
 			children = (
+				FC98BC012453E85D00A992EE /* icons */,
 				FC98BBCF2453DD1700A992EE /* AppDelegate.swift */,
 				FC98BBD12453DD1700A992EE /* SceneDelegate.swift */,
 				FC98BBD62453DD1700A992EE /* ContentView.swift */,
@@ -78,6 +104,44 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		FC98BBE72453DE3A00A992EE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FC98BC012453E85D00A992EE /* icons */ = {
+			isa = PBXGroup;
+			children = (
+				FC98BC032453E88400A992EE /* button */,
+				FC98BC022453E87000A992EE /* appicon */,
+			);
+			path = icons;
+			sourceTree = "<group>";
+		};
+		FC98BC022453E87000A992EE /* appicon */ = {
+			isa = PBXGroup;
+			children = (
+				FC98BC042453E8D000A992EE /* apple-icon-60x60.png */,
+				FC98BC072453E8D000A992EE /* apple-icon-120x120.png */,
+				FC98BC052453E8D000A992EE /* apple-icon-180x180.png */,
+				FC98BC062453E8D000A992EE /* apple-icon.png */,
+			);
+			path = appicon;
+			sourceTree = "<group>";
+		};
+		FC98BC032453E88400A992EE /* button */ = {
+			isa = PBXGroup;
+			children = (
+				FC98BC0C2453ED6900A992EE /* icons8-near-me-50.png */,
+				FC98BC0D2453ED6900A992EE /* icons8-profile-50.png */,
+				FC98BC0E2453ED6900A992EE /* icons8-share-50.png */,
+				FC98BC0F2453ED6900A992EE /* icons8-siri-50.png */,
+			);
+			path = button;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -94,8 +158,13 @@
 			dependencies = (
 			);
 			name = GetCloser4iOS;
+			packageProductDependencies = (
+				FC98BBE82453DE3A00A992EE /* StompClientKit */,
+				FC98BC152453F15700A992EE /* Alamofire */,
+				FC98BC182453F1A000A992EE /* OAuthSwift */,
+			);
 			productName = GetCloser4iOS;
-			productReference = FC98BBCC2453DD1700A992EE /* GetCloser4iOS.app */;
+			productReference = FC98BBCC2453DD1700A992EE /* Get Closer.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -122,6 +191,10 @@
 				Base,
 			);
 			mainGroup = FC98BBC32453DD1700A992EE;
+			packageReferences = (
+				FC98BC142453F15700A992EE /* XCRemoteSwiftPackageReference "Alamofire" */,
+				FC98BC172453F1A000A992EE /* XCRemoteSwiftPackageReference "OAuthSwift" */,
+			);
 			productRefGroup = FC98BBCD2453DD1700A992EE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -136,9 +209,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC98BC102453ED6900A992EE /* icons8-near-me-50.png in Resources */,
+				FC98BC0B2453E8D000A992EE /* apple-icon-120x120.png in Resources */,
+				FC98BC082453E8D000A992EE /* apple-icon-60x60.png in Resources */,
 				FC98BBDF2453DD1900A992EE /* LaunchScreen.storyboard in Resources */,
+				FC98BC092453E8D000A992EE /* apple-icon-180x180.png in Resources */,
 				FC98BBDC2453DD1900A992EE /* Preview Assets.xcassets in Resources */,
+				FC98BC122453ED6900A992EE /* icons8-share-50.png in Resources */,
 				FC98BBD92453DD1900A992EE /* Assets.xcassets in Resources */,
+				FC98BC132453ED6900A992EE /* icons8-siri-50.png in Resources */,
+				FC98BC112453ED6900A992EE /* icons8-profile-50.png in Resources */,
+				FC98BC0A2453E8D000A992EE /* apple-icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,7 +301,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -274,7 +355,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -293,12 +374,13 @@
 				DEVELOPMENT_TEAM = 58C95FHL5U;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = GetCloser4iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.gridscale.GetCloser4iOS;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gridscale.GetCloser;
+				PRODUCT_NAME = "Get Closer";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -313,12 +395,13 @@
 				DEVELOPMENT_TEAM = 58C95FHL5U;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = GetCloser4iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.gridscale.GetCloser4iOS;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gridscale.GetCloser;
+				PRODUCT_NAME = "Get Closer";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -346,6 +429,42 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FC98BC142453F15700A992EE /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.0;
+			};
+		};
+		FC98BC172453F1A000A992EE /* XCRemoteSwiftPackageReference "OAuthSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/OAuthSwift/OAuthSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FC98BBE82453DE3A00A992EE /* StompClientKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = StompClientKit;
+		};
+		FC98BC152453F15700A992EE /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FC98BC142453F15700A992EE /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		FC98BC182453F1A000A992EE /* OAuthSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FC98BC172453F1A000A992EE /* XCRemoteSwiftPackageReference "OAuthSwift" */;
+			productName = OAuthSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		FC98BBD32453DD1700A992EE /* GetCloser4iOS.xcdatamodeld */ = {
