@@ -19,12 +19,13 @@
 		FC98BC092453E8D000A992EE /* apple-icon-180x180.png in Resources */ = {isa = PBXBuildFile; fileRef = FC98BC052453E8D000A992EE /* apple-icon-180x180.png */; };
 		FC98BC0A2453E8D000A992EE /* apple-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = FC98BC062453E8D000A992EE /* apple-icon.png */; };
 		FC98BC0B2453E8D000A992EE /* apple-icon-120x120.png in Resources */ = {isa = PBXBuildFile; fileRef = FC98BC072453E8D000A992EE /* apple-icon-120x120.png */; };
-		FC98BC102453ED6900A992EE /* icons8-near-me-50.png in Resources */ = {isa = PBXBuildFile; fileRef = FC98BC0C2453ED6900A992EE /* icons8-near-me-50.png */; };
-		FC98BC112453ED6900A992EE /* icons8-profile-50.png in Resources */ = {isa = PBXBuildFile; fileRef = FC98BC0D2453ED6900A992EE /* icons8-profile-50.png */; };
-		FC98BC122453ED6900A992EE /* icons8-share-50.png in Resources */ = {isa = PBXBuildFile; fileRef = FC98BC0E2453ED6900A992EE /* icons8-share-50.png */; };
-		FC98BC132453ED6900A992EE /* icons8-siri-50.png in Resources */ = {isa = PBXBuildFile; fileRef = FC98BC0F2453ED6900A992EE /* icons8-siri-50.png */; };
 		FC98BC162453F15700A992EE /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = FC98BC152453F15700A992EE /* Alamofire */; };
 		FC98BC192453F1A000A992EE /* OAuthSwift in Frameworks */ = {isa = PBXBuildFile; productRef = FC98BC182453F1A000A992EE /* OAuthSwift */; };
+		FC98BC1E2453FB2300A992EE /* icons8-profile-32.png in Resources */ = {isa = PBXBuildFile; fileRef = FC98BC1A2453FB2300A992EE /* icons8-profile-32.png */; };
+		FC98BC1F2453FB2300A992EE /* icons8-near-me-32.png in Resources */ = {isa = PBXBuildFile; fileRef = FC98BC1B2453FB2300A992EE /* icons8-near-me-32.png */; };
+		FC98BC202453FB2300A992EE /* icons8-share-32.png in Resources */ = {isa = PBXBuildFile; fileRef = FC98BC1C2453FB2300A992EE /* icons8-share-32.png */; };
+		FC98BC212453FB2300A992EE /* icons8-siri-32.png in Resources */ = {isa = PBXBuildFile; fileRef = FC98BC1D2453FB2300A992EE /* icons8-siri-32.png */; };
+		FC98BC242454517E00A992EE /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC98BC232454517E00A992EE /* Place.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,10 +43,11 @@
 		FC98BC052453E8D000A992EE /* apple-icon-180x180.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "apple-icon-180x180.png"; sourceTree = "<group>"; };
 		FC98BC062453E8D000A992EE /* apple-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "apple-icon.png"; sourceTree = "<group>"; };
 		FC98BC072453E8D000A992EE /* apple-icon-120x120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "apple-icon-120x120.png"; sourceTree = "<group>"; };
-		FC98BC0C2453ED6900A992EE /* icons8-near-me-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-near-me-50.png"; sourceTree = "<group>"; };
-		FC98BC0D2453ED6900A992EE /* icons8-profile-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-profile-50.png"; sourceTree = "<group>"; };
-		FC98BC0E2453ED6900A992EE /* icons8-share-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-share-50.png"; sourceTree = "<group>"; };
-		FC98BC0F2453ED6900A992EE /* icons8-siri-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-siri-50.png"; sourceTree = "<group>"; };
+		FC98BC1A2453FB2300A992EE /* icons8-profile-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-profile-32.png"; sourceTree = "<group>"; };
+		FC98BC1B2453FB2300A992EE /* icons8-near-me-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-near-me-32.png"; sourceTree = "<group>"; };
+		FC98BC1C2453FB2300A992EE /* icons8-share-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-share-32.png"; sourceTree = "<group>"; };
+		FC98BC1D2453FB2300A992EE /* icons8-siri-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-siri-32.png"; sourceTree = "<group>"; };
+		FC98BC232454517E00A992EE /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 		FC98BBCE2453DD1700A992EE /* GetCloser4iOS */ = {
 			isa = PBXGroup;
 			children = (
+				FC98BC222453FCD300A992EE /* place */,
 				FC98BC012453E85D00A992EE /* icons */,
 				FC98BBCF2453DD1700A992EE /* AppDelegate.swift */,
 				FC98BBD12453DD1700A992EE /* SceneDelegate.swift */,
@@ -134,12 +137,20 @@
 		FC98BC032453E88400A992EE /* button */ = {
 			isa = PBXGroup;
 			children = (
-				FC98BC0C2453ED6900A992EE /* icons8-near-me-50.png */,
-				FC98BC0D2453ED6900A992EE /* icons8-profile-50.png */,
-				FC98BC0E2453ED6900A992EE /* icons8-share-50.png */,
-				FC98BC0F2453ED6900A992EE /* icons8-siri-50.png */,
+				FC98BC1B2453FB2300A992EE /* icons8-near-me-32.png */,
+				FC98BC1A2453FB2300A992EE /* icons8-profile-32.png */,
+				FC98BC1C2453FB2300A992EE /* icons8-share-32.png */,
+				FC98BC1D2453FB2300A992EE /* icons8-siri-32.png */,
 			);
 			path = button;
+			sourceTree = "<group>";
+		};
+		FC98BC222453FCD300A992EE /* place */ = {
+			isa = PBXGroup;
+			children = (
+				FC98BC232454517E00A992EE /* Place.swift */,
+			);
+			path = place;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,16 +220,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC98BC102453ED6900A992EE /* icons8-near-me-50.png in Resources */,
 				FC98BC0B2453E8D000A992EE /* apple-icon-120x120.png in Resources */,
 				FC98BC082453E8D000A992EE /* apple-icon-60x60.png in Resources */,
+				FC98BC212453FB2300A992EE /* icons8-siri-32.png in Resources */,
 				FC98BBDF2453DD1900A992EE /* LaunchScreen.storyboard in Resources */,
+				FC98BC1F2453FB2300A992EE /* icons8-near-me-32.png in Resources */,
 				FC98BC092453E8D000A992EE /* apple-icon-180x180.png in Resources */,
+				FC98BC1E2453FB2300A992EE /* icons8-profile-32.png in Resources */,
 				FC98BBDC2453DD1900A992EE /* Preview Assets.xcassets in Resources */,
-				FC98BC122453ED6900A992EE /* icons8-share-50.png in Resources */,
 				FC98BBD92453DD1900A992EE /* Assets.xcassets in Resources */,
-				FC98BC132453ED6900A992EE /* icons8-siri-50.png in Resources */,
-				FC98BC112453ED6900A992EE /* icons8-profile-50.png in Resources */,
+				FC98BC202453FB2300A992EE /* icons8-share-32.png in Resources */,
 				FC98BC0A2453E8D000A992EE /* apple-icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -234,6 +245,7 @@
 				FC98BBD22453DD1700A992EE /* SceneDelegate.swift in Sources */,
 				FC98BBD72453DD1700A992EE /* ContentView.swift in Sources */,
 				FC98BBD52453DD1700A992EE /* GetCloser4iOS.xcdatamodeld in Sources */,
+				FC98BC242454517E00A992EE /* Place.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
