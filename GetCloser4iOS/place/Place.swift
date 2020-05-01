@@ -11,9 +11,15 @@ import SceneKit
 
 struct Place: UIViewRepresentable {
     let scene = SCNScene()
-
+    var scnView = SCNView()
+    
+    
     func makeUIView(context: Context) -> SCNView {
-
+        
+        if (scene.rootNode.childNodes.count > 0) {
+            return scnView
+        }
+        
         // create a box
         scene.rootNode.addChildNode(createBox())
 
@@ -21,7 +27,7 @@ struct Place: UIViewRepresentable {
         // …
 
         // retrieve the SCNView
-        let scnView = SCNView()
+        
         scnView.scene = scene
         return scnView
     }
@@ -36,7 +42,7 @@ struct Place: UIViewRepresentable {
         scnView.backgroundColor = UIColor.gray
 
         // show statistics such as fps and timing information
-        scnView.showsStatistics = true
+        scnView.showsStatistics = false
         scnView.debugOptions = .showWireframe
     }
 

@@ -26,6 +26,8 @@
 		FC98BC202453FB2300A992EE /* icons8-share-32.png in Resources */ = {isa = PBXBuildFile; fileRef = FC98BC1C2453FB2300A992EE /* icons8-share-32.png */; };
 		FC98BC212453FB2300A992EE /* icons8-siri-32.png in Resources */ = {isa = PBXBuildFile; fileRef = FC98BC1D2453FB2300A992EE /* icons8-siri-32.png */; };
 		FC98BC242454517E00A992EE /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC98BC232454517E00A992EE /* Place.swift */; };
+		FC98BC2624558ADC00A992EE /* PlaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC98BC2524558ADB00A992EE /* PlaceView.swift */; };
+		FCB0CAE824568B9C008064B0 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB0CAE724568B9C008064B0 /* Config.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +50,8 @@
 		FC98BC1C2453FB2300A992EE /* icons8-share-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-share-32.png"; sourceTree = "<group>"; };
 		FC98BC1D2453FB2300A992EE /* icons8-siri-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-siri-32.png"; sourceTree = "<group>"; };
 		FC98BC232454517E00A992EE /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		FC98BC2524558ADB00A992EE /* PlaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceView.swift; sourceTree = "<group>"; };
+		FCB0CAE724568B9C008064B0 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +99,7 @@
 				FC98BBE02453DD1900A992EE /* Info.plist */,
 				FC98BBD32453DD1700A992EE /* GetCloser4iOS.xcdatamodeld */,
 				FC98BBDA2453DD1900A992EE /* Preview Content */,
+				FCB0CAE724568B9C008064B0 /* Config.swift */,
 			);
 			path = GetCloser4iOS;
 			sourceTree = "<group>";
@@ -149,6 +154,7 @@
 			isa = PBXGroup;
 			children = (
 				FC98BC232454517E00A992EE /* Place.swift */,
+				FC98BC2524558ADB00A992EE /* PlaceView.swift */,
 			);
 			path = place;
 			sourceTree = "<group>";
@@ -241,8 +247,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC98BC2624558ADC00A992EE /* PlaceView.swift in Sources */,
 				FC98BBD02453DD1700A992EE /* AppDelegate.swift in Sources */,
 				FC98BBD22453DD1700A992EE /* SceneDelegate.swift in Sources */,
+				FCB0CAE824568B9C008064B0 /* Config.swift in Sources */,
 				FC98BBD72453DD1700A992EE /* ContentView.swift in Sources */,
 				FC98BBD52453DD1700A992EE /* GetCloser4iOS.xcdatamodeld in Sources */,
 				FC98BC242454517E00A992EE /* Place.swift in Sources */,

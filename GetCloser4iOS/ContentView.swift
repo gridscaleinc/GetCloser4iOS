@@ -10,46 +10,54 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var selection = 0
- 
+    
     var body: some View {
         TabView(selection: $selection){
-            Place()
-                .font(.title)
-                .tabItem {
-                    VStack {
-                        Image("Near")
-                        Text("井戸端")
-                    }
+            NavigationView {
+                PlaceView()
+                .navigationBarTitle(Text("Near by me"))
+            }.tabItem {
+                VStack {
+                     Image("Near")
+                     Text("井戸端")
                 }
-                .tag(0)
-            Text("サービスエリア")
-                .font(.title)
-                .tabItem {
-                    VStack {
-                        Image("Service")
-                        Text("サービス")
-                    }
+            }.tag(0)
+            NavigationView {
+                Text("サービスエリア")
+                    .font(.title)
+                .navigationBarTitle(Text("Service Area"))
+            }
+            .tabItem {
+                VStack {
+                    Image("Service")
+                    Text("サービス")
                 }
-                .tag(1)
-            Text("Social Network")
-                .font(.title)
-                .tabItem {
-                    VStack {
-                        Image("Network")
-                        Text("SNS")
-                    }
+            }
+            .tag(1)
+            NavigationView {
+                Text("Social Network")
+                    .font(.title)
+                .navigationBarTitle(Text("Social Network"))
+            }
+            .tabItem {
+                VStack {
+                    Image("Network")
+                    Text("SNS")
                 }
-                .tag(2)
+            }
+            .tag(2)
+            NavigationView {
             Text("Profile")
                 .font(.title)
-                .tabItem {
-                    VStack {
-                        Image("Profile")
-                        Text("Profile")
-                    }
+                .navigationBarTitle(Text("Profile"))
+            }
+            .tabItem {
+                VStack {
+                    Image("Profile")
+                    Text("Profile")
                 }
-                .tag(3)
-            
+            }
+            .tag(3)
         }
     }
 }
