@@ -17,8 +17,12 @@ struct PlaceView: View {
     
     init() {
         stompclient = StompClient(endpoint: StompConfig.GETCLOSER_WS_ENDPOINT)
-        stompclient.startConnect()
-//        stompclient.subscribe(to: StompConfig.GETCLOSER_GEOTAG_TOPIC_PREFIX, handleby: self.handleMessage)
+        stompclient.messageHandler = self.handleMessage
+        stompclient.startConnect ( onConnected:  {
+            client in
+            client.subscribe(to: StompConfig.GETCLOSER_GEOTAG_TOPIC_PREFIX)
+        })
+//
     }
     
     var body: some View {
