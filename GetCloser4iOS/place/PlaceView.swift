@@ -11,9 +11,10 @@ import SwiftUI
 import StompClientKit
 
 struct PlaceView: View {
-    
-    @State var msg: String = ""
+
     var stompclient : StompClient
+    
+    @ObservedObject var content = ContentModel()
     
     init() {
         stompclient = StompClient(endpoint: StompConfig.GETCLOSER_WS_ENDPOINT)
@@ -27,15 +28,20 @@ struct PlaceView: View {
     
     var body: some View {
         ZStack {
-            Place()
+            Place(text: $content.message)
             VStack {
                 Spacer()
+                    Text("Message: \(content.message)")
                 HStack {
                     Spacer()
-                    TextField("Message...", text: $msg){
+                    TextField("Message...", text: $content.message){
                         UIApplication.shared.endEditing()
                     }.border(Color.black)
-                    Button(action:{}) {
+                    Button(action:{
+                        var message = StompMessage()
+                        message.name = self.content.message
+                        self.stompclient.sendJson(message)
+                    }) {
                         Text("send")
                     }
                 }
@@ -44,6 +50,14 @@ struct PlaceView: View {
     }
     
     func handleMessage(frame: Frame)  {
-        print(frame)
+        DispatchQueue.main.async {
+            do {
+                let dto = try JSONDecoder().decode(ContentDto.self, from: frame.body.data)
+                self.content.message = dto.content
+            } catch {
+                
+            }
+                
+        }
     }
 }

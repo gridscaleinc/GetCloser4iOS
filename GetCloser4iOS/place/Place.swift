@@ -12,8 +12,11 @@ import SceneKit
 struct Place: UIViewRepresentable {
     let scene = SCNScene()
     var scnView = SCNView()
+    @State var text = ""
     
-    
+    init (text: Binding<String>) {
+        self.text = text.wrappedValue
+    }
     func makeUIView(context: Context) -> SCNView {
         
         if (scene.rootNode.childNodes.count > 0) {

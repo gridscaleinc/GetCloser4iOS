@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FC223606245D056800BE3C6E /* Content.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC223605245D056700BE3C6E /* Content.swift */; };
 		FC98BBD02453DD1700A992EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC98BBCF2453DD1700A992EE /* AppDelegate.swift */; };
 		FC98BBD22453DD1700A992EE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC98BBD12453DD1700A992EE /* SceneDelegate.swift */; };
 		FC98BBD52453DD1700A992EE /* GetCloser4iOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FC98BBD32453DD1700A992EE /* GetCloser4iOS.xcdatamodeld */; };
@@ -31,6 +32,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FC223605245D056700BE3C6E /* Content.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Content.swift; sourceTree = "<group>"; };
 		FC98BBCC2453DD1700A992EE /* Get Closer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Get Closer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC98BBCF2453DD1700A992EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FC98BBD12453DD1700A992EE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 		FC98BBCE2453DD1700A992EE /* GetCloser4iOS */ = {
 			isa = PBXGroup;
 			children = (
+				FCB0CAE9245C57C3008064B0 /* models */,
 				FC98BC222453FCD300A992EE /* place */,
 				FC98BC012453E85D00A992EE /* icons */,
 				FC98BBCF2453DD1700A992EE /* AppDelegate.swift */,
@@ -157,6 +160,14 @@
 				FC98BC2524558ADB00A992EE /* PlaceView.swift */,
 			);
 			path = place;
+			sourceTree = "<group>";
+		};
+		FCB0CAE9245C57C3008064B0 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				FC223605245D056700BE3C6E /* Content.swift */,
+			);
+			path = models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,6 +261,7 @@
 				FC98BC2624558ADC00A992EE /* PlaceView.swift in Sources */,
 				FC98BBD02453DD1700A992EE /* AppDelegate.swift in Sources */,
 				FC98BBD22453DD1700A992EE /* SceneDelegate.swift in Sources */,
+				FC223606245D056800BE3C6E /* Content.swift in Sources */,
 				FCB0CAE824568B9C008064B0 /* Config.swift in Sources */,
 				FC98BBD72453DD1700A992EE /* ContentView.swift in Sources */,
 				FC98BBD52453DD1700A992EE /* GetCloser4iOS.xcdatamodeld in Sources */,
