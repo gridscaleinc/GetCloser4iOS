@@ -29,6 +29,7 @@
 		FC98BC242454517E00A992EE /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC98BC232454517E00A992EE /* Place.swift */; };
 		FC98BC2624558ADC00A992EE /* PlaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC98BC2524558ADB00A992EE /* PlaceView.swift */; };
 		FCB0CAE824568B9C008064B0 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB0CAE724568B9C008064B0 /* Config.swift */; };
+		FCBB07F1245E7BE200919498 /* HelloMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCBB07F0245E7BE200919498 /* HelloMessage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		FC98BC232454517E00A992EE /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 		FC98BC2524558ADB00A992EE /* PlaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceView.swift; sourceTree = "<group>"; };
 		FCB0CAE724568B9C008064B0 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		FCBB07F0245E7BE200919498 /* HelloMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloMessage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				FC223605245D056700BE3C6E /* Content.swift */,
+				FCBB07F0245E7BE200919498 /* HelloMessage.swift */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCBB07F1245E7BE200919498 /* HelloMessage.swift in Sources */,
 				FC98BC2624558ADC00A992EE /* PlaceView.swift in Sources */,
 				FC98BBD02453DD1700A992EE /* AppDelegate.swift in Sources */,
 				FC98BBD22453DD1700A992EE /* SceneDelegate.swift in Sources */,

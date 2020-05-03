@@ -38,9 +38,9 @@ struct PlaceView: View {
                         UIApplication.shared.endEditing()
                     }.border(Color.black)
                     Button(action:{
-                        var message = StompMessage()
+                        var message = HelloMessage()
                         message.name = self.content.message
-                        self.stompclient.sendJson(message)
+                        self.stompclient.sendJson(message, to: "app/hello", contentType: "application/json")
                     }) {
                         Text("send")
                     }
