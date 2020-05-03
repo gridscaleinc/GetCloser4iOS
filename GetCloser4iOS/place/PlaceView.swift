@@ -40,7 +40,7 @@ struct PlaceView: View {
                     Button(action:{
                         var message = HelloMessage()
                         message.name = self.content.message
-                        self.stompclient.sendJson(message, to: "app/hello", contentType: "application/json")
+                        self.stompclient.send(json: message, to: "app/hello", contentType: "application/json")
                     }) {
                         Text("send")
                     }
