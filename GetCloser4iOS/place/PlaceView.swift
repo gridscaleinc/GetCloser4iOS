@@ -9,12 +9,15 @@
 import Foundation
 import SwiftUI
 import StompClientKit
+import Combine
 
 struct PlaceView: View {
 
     var stompclient : StompClient
     
     @ObservedObject var content = ContentModel()
+    
+    @State private var keyboardHeight: CGFloat = 10
     
     init() {
         stompclient = StompClient(endpoint: StompConfig.GETCLOSER_WS_ENDPOINT)
@@ -23,7 +26,6 @@ struct PlaceView: View {
             client in
             client.subscribe(to: StompConfig.GETCLOSER_GEOTAG_TOPIC_PREFIX)
         })
-//
     }
     
     var body: some View {
@@ -45,6 +47,10 @@ struct PlaceView: View {
                         Text("send")
                     }
                 }
+            }.padding(.bottom, keyboardHeight)
+            .onReceive(Publishers.keyboardHeight) {
+                self.keyboardHeight = ($0==0) ? 10 : $0
+                
             }
         }
     }

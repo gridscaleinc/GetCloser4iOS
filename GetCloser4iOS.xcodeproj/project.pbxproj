@@ -28,6 +28,7 @@
 		FC98BC212453FB2300A992EE /* icons8-siri-32.png in Resources */ = {isa = PBXBuildFile; fileRef = FC98BC1D2453FB2300A992EE /* icons8-siri-32.png */; };
 		FC98BC242454517E00A992EE /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC98BC232454517E00A992EE /* Place.swift */; };
 		FC98BC2624558ADC00A992EE /* PlaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC98BC2524558ADB00A992EE /* PlaceView.swift */; };
+		FCAD8BE1245FFBB80098D644 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAD8BE0245FFBB80098D644 /* Extensions.swift */; };
 		FCB0CAE824568B9C008064B0 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB0CAE724568B9C008064B0 /* Config.swift */; };
 		FCBB07F1245E7BE200919498 /* HelloMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCBB07F0245E7BE200919498 /* HelloMessage.swift */; };
 		FCD78013245FB00E008C3195 /* Place.scn in Resources */ = {isa = PBXBuildFile; fileRef = FCD78012245FB00E008C3195 /* Place.scn */; };
@@ -56,6 +57,7 @@
 		FC98BC1D2453FB2300A992EE /* icons8-siri-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-siri-32.png"; sourceTree = "<group>"; };
 		FC98BC232454517E00A992EE /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 		FC98BC2524558ADB00A992EE /* PlaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceView.swift; sourceTree = "<group>"; };
+		FCAD8BE0245FFBB80098D644 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		FCB0CAE724568B9C008064B0 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		FCBB07F0245E7BE200919498 /* HelloMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloMessage.swift; sourceTree = "<group>"; };
 		FCD78012245FB00E008C3195 /* Place.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Place.scn; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 				FC98BBD32453DD1700A992EE /* GetCloser4iOS.xcdatamodeld */,
 				FC98BBDA2453DD1900A992EE /* Preview Content */,
 				FCB0CAE724568B9C008064B0 /* Config.swift */,
+				FCAD8BE0245FFBB80098D644 /* Extensions.swift */,
 			);
 			path = GetCloser4iOS;
 			sourceTree = "<group>";
@@ -282,6 +285,7 @@
 				FC98BBD02453DD1700A992EE /* AppDelegate.swift in Sources */,
 				FC98BBD22453DD1700A992EE /* SceneDelegate.swift in Sources */,
 				FC223606245D056800BE3C6E /* Content.swift in Sources */,
+				FCAD8BE1245FFBB80098D644 /* Extensions.swift in Sources */,
 				FCB0CAE824568B9C008064B0 /* Config.swift in Sources */,
 				FC98BBD72453DD1700A992EE /* ContentView.swift in Sources */,
 				FC98BBD52453DD1700A992EE /* GetCloser4iOS.xcdatamodeld in Sources */,
