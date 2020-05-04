@@ -20,13 +20,22 @@ struct HelloMessage: StompMessage, Codable {
         return try JSONDecoder().decode(HelloMessage.self, from: data.data(using: encoding)!)
     }
     
+    /**
+     * 文字列を返す。
+     */
     func toText() -> String {
-        return ""
+        return name
     }
     
+    /// オブジェクトをJSONへ変換。
+    ///
+    /// - Returns: このオブジェクトのJSON形の文字列。
     func toJson() -> String {
-        return ""
+        do {
+            let js = try JSONEncoder().encode(self)
+            return String(data: js, encoding: .utf8) ?? ""
+        } catch {
+            return ""
+        }
     }
-    
-    
 }

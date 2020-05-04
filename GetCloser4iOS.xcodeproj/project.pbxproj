@@ -30,6 +30,8 @@
 		FC98BC2624558ADC00A992EE /* PlaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC98BC2524558ADB00A992EE /* PlaceView.swift */; };
 		FCB0CAE824568B9C008064B0 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB0CAE724568B9C008064B0 /* Config.swift */; };
 		FCBB07F1245E7BE200919498 /* HelloMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCBB07F0245E7BE200919498 /* HelloMessage.swift */; };
+		FCD78013245FB00E008C3195 /* Place.scn in Resources */ = {isa = PBXBuildFile; fileRef = FCD78012245FB00E008C3195 /* Place.scn */; };
+		FCD78015245FB0B4008C3195 /* Sprite.sks in Resources */ = {isa = PBXBuildFile; fileRef = FCD78014245FB0B4008C3195 /* Sprite.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +58,8 @@
 		FC98BC2524558ADB00A992EE /* PlaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceView.swift; sourceTree = "<group>"; };
 		FCB0CAE724568B9C008064B0 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		FCBB07F0245E7BE200919498 /* HelloMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloMessage.swift; sourceTree = "<group>"; };
+		FCD78012245FB00E008C3195 /* Place.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Place.scn; sourceTree = "<group>"; };
+		FCD78014245FB0B4008C3195 /* Sprite.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Sprite.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +97,7 @@
 		FC98BBCE2453DD1700A992EE /* GetCloser4iOS */ = {
 			isa = PBXGroup;
 			children = (
+				FCD78011245FAF5C008C3195 /* scene */,
 				FCB0CAE9245C57C3008064B0 /* models */,
 				FC98BC222453FCD300A992EE /* place */,
 				FC98BC012453E85D00A992EE /* icons */,
@@ -173,6 +178,15 @@
 			path = models;
 			sourceTree = "<group>";
 		};
+		FCD78011245FAF5C008C3195 /* scene */ = {
+			isa = PBXGroup;
+			children = (
+				FCD78014245FB0B4008C3195 /* Sprite.sks */,
+				FCD78012245FB00E008C3195 /* Place.scn */,
+			);
+			path = scene;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -240,10 +254,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCD78013245FB00E008C3195 /* Place.scn in Resources */,
 				FC98BC0B2453E8D000A992EE /* apple-icon-120x120.png in Resources */,
 				FC98BC082453E8D000A992EE /* apple-icon-60x60.png in Resources */,
 				FC98BC212453FB2300A992EE /* icons8-siri-32.png in Resources */,
 				FC98BBDF2453DD1900A992EE /* LaunchScreen.storyboard in Resources */,
+				FCD78015245FB0B4008C3195 /* Sprite.sks in Resources */,
 				FC98BC1F2453FB2300A992EE /* icons8-near-me-32.png in Resources */,
 				FC98BC092453E8D000A992EE /* apple-icon-180x180.png in Resources */,
 				FC98BC1E2453FB2300A992EE /* icons8-profile-32.png in Resources */,

@@ -40,7 +40,7 @@ struct PlaceView: View {
                     Button(action:{
                         var message = HelloMessage()
                         message.name = self.content.message
-                        self.stompclient.send(json: message, to: "app/hello", contentType: "application/json")
+                        self.stompclient.send(json: message, to: "/app/hello", contentType: "application/json")
                     }) {
                         Text("send")
                     }
@@ -59,5 +59,11 @@ struct PlaceView: View {
             }
                 
         }
+    }
+}
+
+struct PlaceView_Previews: PreviewProvider {
+    static var previews: some View {
+        PlaceView()
     }
 }
