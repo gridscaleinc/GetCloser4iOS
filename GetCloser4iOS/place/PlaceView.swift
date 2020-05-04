@@ -17,8 +17,6 @@ struct PlaceView: View {
     
     @ObservedObject var content = ContentModel()
     
-    @State private var keyboardHeight: CGFloat = 10
-    
     init() {
         stompclient = StompClient(endpoint: StompConfig.GETCLOSER_WS_ENDPOINT)
         stompclient.messageHandler = self.handleMessage
@@ -47,11 +45,8 @@ struct PlaceView: View {
                         Text("send")
                     }
                 }
-            }.padding(.bottom, keyboardHeight)
-            .onReceive(Publishers.keyboardHeight) {
-                self.keyboardHeight = ($0==0) ? 10 : $0
-                
-            }
+            }.padding()
+            .keyboardAdaptive()
         }
     }
     
