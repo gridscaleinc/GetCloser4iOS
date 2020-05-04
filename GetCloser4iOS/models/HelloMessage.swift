@@ -9,9 +9,18 @@
 import Foundation
 import StompClientKit
 
+/// HellMessage
+/// 挨拶文の内容を格納。
 struct HelloMessage: StompMessage, Codable {
     var name: String = ""
     
+    /// テキストからオブジェクトへ変換。
+    ///
+    /// - Parameters:
+    ///   - data: <#data description#>
+    ///   - encoding: <#encoding description#>
+    /// - Throws: <#description#>
+    /// - Returns: <#description#>
     func fromText(text data: String, using encoding: String.Encoding) throws -> StompMessage {
         return HelloMessage()
     }
@@ -31,11 +40,7 @@ struct HelloMessage: StompMessage, Codable {
     ///
     /// - Returns: このオブジェクトのJSON形の文字列。
     func toJson() -> String {
-        do {
-            let js = try JSONEncoder().encode(self)
-            return String(data: js, encoding: .utf8) ?? ""
-        } catch {
-            return ""
-        }
+        let js = try! JSONEncoder().encode(self)
+        return String(data: js, encoding: .utf8) ?? ""
     }
 }
