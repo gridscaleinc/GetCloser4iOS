@@ -29,6 +29,10 @@
 		FC98BC242454517E00A992EE /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC98BC232454517E00A992EE /* Place.swift */; };
 		FC98BC2624558ADC00A992EE /* PlaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC98BC2524558ADB00A992EE /* PlaceView.swift */; };
 		FCAD8BE1245FFBB80098D644 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAD8BE0245FFBB80098D644 /* Extensions.swift */; };
+		FCAD8BE424615B410098D644 /* InputBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAD8BE324615B410098D644 /* InputBar.swift */; };
+		FCAD8BE624615D990098D644 /* InputContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAD8BE524615D990098D644 /* InputContent.swift */; };
+		FCAD8BE82461A5BE0098D644 /* VoiceRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAD8BE72461A5BE0098D644 /* VoiceRecorder.swift */; };
+		FCAD8BED2461B8990098D644 /* TapCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAD8BEC2461B8990098D644 /* TapCircleView.swift */; };
 		FCB0CAE824568B9C008064B0 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB0CAE724568B9C008064B0 /* Config.swift */; };
 		FCBB07F1245E7BE200919498 /* HelloMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCBB07F0245E7BE200919498 /* HelloMessage.swift */; };
 		FCD78013245FB00E008C3195 /* Place.scn in Resources */ = {isa = PBXBuildFile; fileRef = FCD78012245FB00E008C3195 /* Place.scn */; };
@@ -58,6 +62,10 @@
 		FC98BC232454517E00A992EE /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 		FC98BC2524558ADB00A992EE /* PlaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceView.swift; sourceTree = "<group>"; };
 		FCAD8BE0245FFBB80098D644 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		FCAD8BE324615B410098D644 /* InputBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputBar.swift; sourceTree = "<group>"; };
+		FCAD8BE524615D990098D644 /* InputContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputContent.swift; sourceTree = "<group>"; };
+		FCAD8BE72461A5BE0098D644 /* VoiceRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceRecorder.swift; sourceTree = "<group>"; };
+		FCAD8BEC2461B8990098D644 /* TapCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapCircleView.swift; sourceTree = "<group>"; };
 		FCB0CAE724568B9C008064B0 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		FCBB07F0245E7BE200919498 /* HelloMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloMessage.swift; sourceTree = "<group>"; };
 		FCD78012245FB00E008C3195 /* Place.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Place.scn; sourceTree = "<group>"; };
@@ -99,6 +107,8 @@
 		FC98BBCE2453DD1700A992EE /* GetCloser4iOS */ = {
 			isa = PBXGroup;
 			children = (
+				FCAD8BE92461A8A30098D644 /* views */,
+				FCAD8BE224615AF60098D644 /* inputbar */,
 				FCD78011245FAF5C008C3195 /* scene */,
 				FCB0CAE9245C57C3008064B0 /* models */,
 				FC98BC222453FCD300A992EE /* place */,
@@ -172,11 +182,29 @@
 			path = place;
 			sourceTree = "<group>";
 		};
+		FCAD8BE224615AF60098D644 /* inputbar */ = {
+			isa = PBXGroup;
+			children = (
+				FCAD8BE324615B410098D644 /* InputBar.swift */,
+			);
+			path = inputbar;
+			sourceTree = "<group>";
+		};
+		FCAD8BE92461A8A30098D644 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				FCAD8BEC2461B8990098D644 /* TapCircleView.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
 		FCB0CAE9245C57C3008064B0 /* models */ = {
 			isa = PBXGroup;
 			children = (
 				FC223605245D056700BE3C6E /* Content.swift */,
 				FCBB07F0245E7BE200919498 /* HelloMessage.swift */,
+				FCAD8BE524615D990098D644 /* InputContent.swift */,
+				FCAD8BE72461A5BE0098D644 /* VoiceRecorder.swift */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -280,12 +308,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCAD8BE624615D990098D644 /* InputContent.swift in Sources */,
+				FCAD8BE424615B410098D644 /* InputBar.swift in Sources */,
+				FCAD8BED2461B8990098D644 /* TapCircleView.swift in Sources */,
 				FCBB07F1245E7BE200919498 /* HelloMessage.swift in Sources */,
 				FC98BC2624558ADC00A992EE /* PlaceView.swift in Sources */,
 				FC98BBD02453DD1700A992EE /* AppDelegate.swift in Sources */,
 				FC98BBD22453DD1700A992EE /* SceneDelegate.swift in Sources */,
 				FC223606245D056800BE3C6E /* Content.swift in Sources */,
 				FCAD8BE1245FFBB80098D644 /* Extensions.swift in Sources */,
+				FCAD8BE82461A5BE0098D644 /* VoiceRecorder.swift in Sources */,
 				FCB0CAE824568B9C008064B0 /* Config.swift in Sources */,
 				FC98BBD72453DD1700A992EE /* ContentView.swift in Sources */,
 				FC98BBD52453DD1700A992EE /* GetCloser4iOS.xcdatamodeld in Sources */,

@@ -10,12 +10,15 @@ import Foundation
 import SwiftUI
 import StompClientKit
 import Combine
+import AVFoundation
+import NaturalLanguage
 
 struct PlaceView: View {
 
     var stompclient : StompClient
     
     @ObservedObject var content = ContentModel()
+    @State var input = InputContent()
     
     init() {
         stompclient = StompClient(endpoint: StompConfig.GETCLOSER_WS_ENDPOINT)
@@ -27,39 +30,62 @@ struct PlaceView: View {
     }
     
     var body: some View {
-        ZStack {
-            Place(text: $content.message)
+        ZStack{
+            Place(text: $input.text)
             VStack {
                 Spacer()
-                    Text("Message: \(content.message)")
-                HStack {
-                    Spacer()
-                    TextField("Message...", text: $content.message){
-                        UIApplication.shared.endEditing()
-                    }.border(Color.black)
-                    Button(action:{
+                InputBar(content: $input, {
+                    if (self.input.text.count != 0) {
                         var message = HelloMessage()
                         message.name = self.content.message
                         self.stompclient.send(json: message, to: "/app/hello", contentType: "application/json")
-                    }) {
-                        Text("send")
                     }
-                }
+                })
             }.padding()
-            .keyboardAdaptive()
+            .KeyboardAwarePadding()
         }
     }
     
     func handleMessage(frame: Frame)  {
-        DispatchQueue.main.async {
-            do {
-                let dto = try JSONDecoder().decode(ContentDto.self, from: frame.body.data)
-                self.content.message = dto.content
-            } catch {
-                
-            }
-                
+//        DispatchQueue.main.async {
+//            do {
+//                let dto = try JSONDecoder().decode(ContentDto.self, from: frame.body.data)
+//                self.content.message = dto.content
+//            } catch {
+//
+//            }
+//
+//        }
+        do {
+            let dto = try JSONDecoder().decode(ContentDto.self, from: frame.body.data)
+            speech(text: dto.content)
+        } catch {
+            
         }
+        
+    }
+    
+    func speech(text: String ) {
+        let language = NLLanguageRecognizer.dominantLanguage(for: text)
+        if (language != nil) {
+            let utterance = AVSpeechUtterance(string: text)
+            utterance.voice = AVSpeechSynthesisVoice(language: language!.rawValue)
+            utterance.rate = 0.5
+
+            let synthesizer = AVSpeechSynthesizer()
+            synthesizer.speak(utterance)
+        }
+        
+    }
+}
+
+struct GradientButtonStyle: ButtonStyle {
+    func makeBody(configuration: Self.Configuration) -> some View {
+        configuration.label
+            .foregroundColor(Color.white)
+            .padding()
+            .background(LinearGradient(gradient: Gradient(colors: [Color.red, Color.orange]), startPoint: .leading, endPoint: .trailing))
+            .cornerRadius(15.0)
     }
 }
 
