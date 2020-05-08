@@ -31,19 +31,27 @@ struct PlaceView: View {
     
     var body: some View {
         ZStack{
-            Place(text: $input.text)
+            Place()
             VStack {
                 Spacer()
                 InputBar(content: $input, {
-                    if (self.input.text.count != 0) {
-                        var message = HelloMessage()
-                        message.name = self.content.message
-                        self.stompclient.send(json: message, to: "/app/hello", contentType: "application/json")
-                    }
-                })
+                    self.handleInput()
+                }).background(Color.white).border(Color.white, width: 0)
             }.padding()
             .KeyboardAwarePadding()
         }
+    }
+    
+    func handleInput() {
+        // if text
+        if (self.input.resultType == .text) {
+            var message = HelloMessage()
+            message.name = self.input.text
+            self.stompclient.send(json: message, to: "/app/hello", contentType: "application/json")
+        }
+        
+        // if audio
+        
     }
     
     func handleMessage(frame: Frame)  {
@@ -57,7 +65,7 @@ struct PlaceView: View {
 //
 //        }
         do {
-            let dto = try JSONDecoder().decode(ContentDto.self, from: frame.body.data)
+            let dto = try JSONDecoder().decode(MimeContent.self, from: frame.body.data)
             speech(text: dto.content)
         } catch {
             

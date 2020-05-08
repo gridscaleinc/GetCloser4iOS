@@ -11,7 +11,7 @@ import SwiftUI
 
 struct InputBar : View {
     @Binding private var content : InputContent
-    @State var voiceInput = VoiceRecorder()
+    @ObservedObject var voiceInput = VoiceRecorder()
     
     var onCommit : () -> Void = {}
     
@@ -28,6 +28,7 @@ struct InputBar : View {
                 }){
                     Image(systemName: "mic.circle").imageScale(.large).foregroundColor(.black)
                 }
+                Spacer()
             } else {
                Button(action:{
                    self.content.type = .text
@@ -43,6 +44,12 @@ struct InputBar : View {
                     .font(Font.system(size: 18, weight: .medium, design: .serif))
                     .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color.blue, lineWidth: 1))
             } else {
+                if (voiceInput.contentReady) {
+                    Button(action:{self.voiceInput.playback()}){
+                        Image(systemName: "play.circle").imageScale(.large).foregroundColor(.black)
+                    }
+                    Spacer()
+                }
                 TapCircle(onceTapped:{ date in
                     print("Start Recording....." + date.description)
                     self.voiceInput.startRecording()

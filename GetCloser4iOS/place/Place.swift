@@ -11,17 +11,10 @@ import SceneKit
 
 struct Place: UIViewRepresentable {
     let scene = SCNScene()
-    var scnView = SCNView()
-    @State var text = ""
     
-    init (text: Binding<String>) {
-        self.text = text.wrappedValue
-    }
     func makeUIView(context: Context) -> SCNView {
-        
-        if (scene.rootNode.childNodes.count > 0) {
-            return scnView
-        }
+
+        let scnView = SCNView()
         
         // create a box
         scene.rootNode.addChildNode(createBox())
@@ -63,10 +56,6 @@ struct Place: UIViewRepresentable {
     }
 
     func addBox() {
-        // check if box is already present, no need to add one
-        if scene.rootNode.childNode(withName: "box", recursively: true) != nil {
-            return
-        }
         scene.rootNode.addChildNode(createBox())
     }
 }

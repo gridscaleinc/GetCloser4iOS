@@ -34,9 +34,17 @@ struct TapCircle: View {
     }
     
     var body: some View {
-        ZStack {
-            Circle().fill(self.tapped ? Color.red : Color.blue)
-            Image(systemName: (self.tapped ? "mic.circle.fill" : "mic.circle")).gesture(tap).imageScale(.large)
+        HStack{
+            if (self.tapped) {
+                Text("Tap to Stop").fixedSize()
+            } else {
+                Text("Tap to Record").fixedSize()
+            }
+            
+            ZStack {
+                Circle().fill(self.tapped ? Color.red : Color.blue)
+                Image(systemName: (self.tapped ? "mic.circle.fill" : "mic.circle")).gesture(tap).imageScale(.large)
+            }
         }
     }
 }

@@ -8,10 +8,18 @@
 
 import Foundation
 
+/**
+ *
+ */
 public class ContentModel: ObservableObject {
     @Published public var message = ""
 }
 
-public class ContentDto: Codable {
+/**
+ *
+ */
+public class MimeContent: Codable {
+    
     var content: String
 }
+

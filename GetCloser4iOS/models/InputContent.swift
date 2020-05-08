@@ -13,6 +13,7 @@ struct InputContent {
     var resultType : ContentType = .text
     
     var text: String = ""
+    var data: Data = Data()
     
     init() {
         
