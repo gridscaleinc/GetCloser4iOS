@@ -10,24 +10,12 @@ import Foundation
 import SwiftUI
 import StompClientKit
 import Combine
-import AVFoundation
-import NaturalLanguage
 
 struct PlaceView: View {
 
-    var stompclient : StompClient
     
-    @ObservedObject var content = ContentModel()
+    @ObservedObject var contentManager = ContentManager()
     @State var input = InputContent()
-    
-    init() {
-        stompclient = StompClient(endpoint: StompConfig.GETCLOSER_WS_ENDPOINT)
-        stompclient.messageHandler = self.handleMessage
-        stompclient.startConnect ( onConnected:  {
-            client in
-            client.subscribe(to: StompConfig.GETCLOSER_GEOTAG_TOPIC_PREFIX)
-        })
-    }
     
     var body: some View {
         ZStack{
@@ -45,44 +33,10 @@ struct PlaceView: View {
     func handleInput() {
         // if text
         if (self.input.resultType == .text) {
-            var message = HelloMessage()
-            message.name = self.input.text
-            self.stompclient.send(json: message, to: "/app/hello", contentType: "application/json")
+            contentManager.send(message: self.input.text)
         }
         
         // if audio
-        
-    }
-    
-    func handleMessage(frame: Frame)  {
-//        DispatchQueue.main.async {
-//            do {
-//                let dto = try JSONDecoder().decode(ContentDto.self, from: frame.body.data)
-//                self.content.message = dto.content
-//            } catch {
-//
-//            }
-//
-//        }
-        do {
-            let dto = try JSONDecoder().decode(MimeContent.self, from: frame.body.data)
-            speech(text: dto.content)
-        } catch {
-            
-        }
-        
-    }
-    
-    func speech(text: String ) {
-        let language = NLLanguageRecognizer.dominantLanguage(for: text)
-        if (language != nil) {
-            let utterance = AVSpeechUtterance(string: text)
-            utterance.voice = AVSpeechSynthesisVoice(language: language!.rawValue)
-            utterance.rate = 0.5
-
-            let synthesizer = AVSpeechSynthesizer()
-            synthesizer.speak(utterance)
-        }
         
     }
 }
